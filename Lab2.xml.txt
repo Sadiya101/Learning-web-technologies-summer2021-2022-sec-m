@@ -1,0 +1,134 @@
+<students>
+<student>
+    <name>sadiya</name>
+	<id> 1 </id>
+    <email> sadiyaali88101@gmail.com </email>    //if no info is there then we need to maintai the tag cz value doesn't matter bt structure matters
+<student>
+<student>
+    <name>lamia</name>
+    <id> 2 </id>
+    <email> lamiai88101@gmail.com </email>
+</student>
+</students>
+
+
+
+
+
+
+
+******* 1 ********
+
+<Device_Information>
+	<info>
+		<name>samsung</name>
+	    <unitPrice> 35000 </unitPrice>
+        <stock> 50 </stock> 
+        <status> 50 </status>    
+    </info>
+
+    <info>
+    	<name>HTC</name>
+	    <unitPrice> 65300 </unitPrice>
+        <stock> 35 </stock> 
+        <status> 25 </status>    
+    </info>
+
+    <info>
+    	<name>Nokia</name>
+	    <unitPrice> 35000 </unitPrice>
+        <stock> 100 </stock> 
+        <status> 35 </status>   
+    </info>
+</Device_Information>
+
+
+
+
+
+******* 2 ********
+
+<personInformation>
+	<info>
+		<sl_No> 23 </sl_No>
+		<name>John Carter</name>
+		<admissionDate> 
+			<day> 25 </day>
+			<month> 12 </month>
+			<year> 2015 </year>
+		</admissionDate>
+	</info>
+
+	<info>
+		<sl_No> 29 </sl_No>
+		<name>Bob Marshal</name>
+		<admissionDate> 
+			<day> 13 </day>
+			<month> 01 </month>
+			<year> 19999 </year>
+		</admissionDate>
+	</info>
+
+	<info>
+		<sl_No> 35 </sl_No>
+		<name>Clark Kent</name>
+		<admissionDate> 
+			<day> 17</day>
+			<month> 06 </month>
+			<year> 2005 </year>
+		</admissionDate>
+	</info>
+</personInformation>
+
+
+
+
+******* 3 ********
+
+<EmployeeInfo>
+	<info>
+		<id> 1 </sl_No>
+		<name>John Doe</name>
+		<address>
+		    <flat></flat> 
+			<house_no> 38</house_no>
+			<road_no> 3 </road_no>
+			<area> Banani </area>
+			<city> Dhaka </city>
+		</address>
+		<department> Sales </department>
+		<salary> 20000 </salary>
+	</info>
+
+	<info>
+		<id> 2 </sl_No>
+		<name>Mark Zuckerbag</name>
+		<address>
+			<flat> A1 </flat>
+			<house_no> 20</house_no>
+			<road_no> 18 </road_no>
+			<area> Mirpur </area>
+			<city> Dhaka </city>
+		</address>
+		<department> Accounts </department>
+		<salary> 120000 </salary>
+	</info>
+
+	<info>
+		<id> 1 </sl_No>
+		<name>Ala Voski</name>
+		<address> 
+			<flat></flat>
+			<house_no> 38</house_no>
+			<road_no> 3 </road_no>
+			<area> Motijheel </area>
+			<city> Dhaka </city>
+		</address>
+		<department> Human Resource </department>
+		<salary> 30000 </salary>
+	</info>
+
+
+
+
+
