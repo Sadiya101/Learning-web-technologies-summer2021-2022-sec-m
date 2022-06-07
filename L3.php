@@ -78,35 +78,56 @@ for ($i=10; $i <100 ; $i++)
 
 //*******************6********************
 echo "<br> <b><h3> Sol-6 </h5></b>";
-$p=4;
+$p=5;
 $arr= [1,5,62,10,20];
-$d=5;
+$search=20;
+$counter= 0;
 for ($i=0; $i <$p; $i++)
  { 
-	if($arr[$i]==$d)
+	if($arr[$i]==$search)
 	{
-		echo "<br>"."$arr[$i] found";
+		$counter= 1;
+		echo "<br>"."$arr[$i] found at index $i";
 	}
+
+}
+if ($counter= 0) 
+{
+	echo "<br>"."$arr[$i] not found";
 }
 
 
 //*******************7********************
-/*echo "<br> <b><h3> Sol-7 </h5></b>";
+echo "<br> <b><h3> Sol-7 </h5></b>";
 
-for ($i=0; $i <3; $i++) 
-{ 
-	for ($i=0; $i <3 ; $i++)
-	 { 
-		echo "*";
-		
-	}
+for($p=0; $p<3; $p++)
+{
+    $x="*";
+    for($q=0; $q<=$p; $q++){
+        echo $x++." ";
+    }
+    echo "<br/>";
+}
 
-	for ($i=0; $i <3 ; --$i)
-	{ 
-		echo "i";
-		echo "<br>";
-	}
-}*/
+for($p=3; $p>0; $p--)
+{
+    $y=1;
+    for($q=$p; $q>0; $q--){
+        echo $y++." ";
+    }
+    echo "<br/>";
+}
+
+for($p=1; $p>3; $p++)
+{
+    $z="A";
+    for($q=$p; $q<=$p; $q++){
+        echo $z++." ";
+    }
+    echo "<br/>";
+}
+
+
 
 
 
