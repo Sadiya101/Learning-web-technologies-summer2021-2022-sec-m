@@ -1,30 +1,24 @@
 <?php
 $name = $_POST['name'];
-
-
-	if($name == null)
+for($i=0;$i<100;$i++)
+{
+	if($name == null || $name[0]== range(0,9))
 	{
-		echo "Name field can not be empty";
+		echo "Invalid name";
+		break;
 	}
 
+	elseif($name[0]==range("a","z")||$name[0]==range("A","Z") && str_contains($name,' ')||str_contains($name,'-')||str_contains($name,'.'))
+	{
+		echo "Valid name";
+		break;
+	}
 	else
 	{
-		for($i = 0;$i<100;$i++)
-		{
-			if($name[0]== 'a-z' || 'A-Z' || $name[i]!= '0-9')
-			{ 
-				$flag = 0;
+		echo "Invalid name";
+		break;
 
-		    }
-		    else
-		    {
-
-		    }
-
-		}
-		echo "ok";
-
-		
-		
 	}
+}
+	
 ?>
