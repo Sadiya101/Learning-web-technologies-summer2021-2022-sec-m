@@ -1,7 +1,7 @@
 <?php 
-$gender = $_POST['Gender'];
+//$gen = $_POST['gender'];
 
-if(isset($gender))
+if(isset($_POST['gender']))
     {
 		echo "Valid Gender";
 	}
