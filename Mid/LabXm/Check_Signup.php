@@ -5,6 +5,7 @@ $pass = $_POST['Password'];
 $Cpass = $_POST['CPassword'];
 $userType=$_POST['UserType'];
 $submit = $_POST['SignUp'];
+$counter =0;
 
 if($name == null || $pass == null || $Cpass == null  || $id == null )
 {
@@ -16,7 +17,28 @@ if($name == null || $pass == null || $Cpass == null  || $id == null )
 else
 {
 	//Name
-	for($i=0;$i<80;$i++)
+
+
+	if($name == null || is_numeric($name[0]) || str_contains($name[0],'$') || str_contains($name,'$') || str_contains($name,'*') )
+	{
+		$counter++;
+		print("Invalid name") ;
+		
+	}
+
+	elseif( ctype_alpha($name[0])||str_contains($name,'-')||str_contains($name,'.') && str_contains($name,' '))
+	{
+		echo "Valid name";
+		
+	}
+	
+	else
+	{
+		$counter++;
+		
+
+	}
+	/*for($i=0;$i<80;$i++)
 	{
 		if($name == null || is_numeric($name[0]) || str_contains($name[0],' ') || str_contains($name[0],'$') || str_contains($name,'$') || str_contains($name,'*') )
 		{
@@ -34,7 +56,7 @@ else
 		{
 			break;
 		}
-	}	
+	}*/	
 	
 
 	if(isset($userType))
@@ -43,23 +65,23 @@ else
 	}
 	else
 	{
+		$counter++;
 		echo "Empty field!!!";
 	}
 
     //Passward
-	for($i=0;$i<30;$i++)
-	{
-		if ( str_contains($pass,'@')&& strlen($pass)>=8 ||str_contains($pass,'+') || str_contains($pass,'_')||str_contains($pass,'.')|| ctype_alpha($pass[$i])|| is_numeric($pass[$i])) 
+	
+		if ( str_contains($pass,'@')&& strlen($pass)>=8 ||str_contains($pass,'+') || str_contains($pass,'_')||str_contains($pass,'.')|| ctype_alpha($pass)|| is_numeric($pass)) 
 		{
 			echo "Strong password";
-			break;
+			
 		}
 		else 
 		{
+			$counter++;
 			echo " Password field can not be empty";
-			break;
-		}
-    }
+					}
+    
 
     //Confirm Password
     if($pass == $CPass)
@@ -73,16 +95,22 @@ else
     	if(is_numeric($id))
     	{
     		echo "Valid id";
-    		$user = $name."|".$pass."|".$id."|".$userType."\r\n";
-    $file=fopen('UserList.txt', 'a');
-    fwrite($file, $user);
-    header('location:Login.html');
     	}
     	else
     	{
+    		$counter++;	
     		echo "Invalid id";
 
-    	}    
+    	} 
+    if($counter==0)
+    {
+    	$user = $name."|".$pass."|".$id."|".$userType."\r\n";
+	    $file=fopen('UserList.txt', 'a');
+	    fwrite($file, $user);
+	    header('location:Login.html');
+
+    }   
+    	
 }
 
 ?>

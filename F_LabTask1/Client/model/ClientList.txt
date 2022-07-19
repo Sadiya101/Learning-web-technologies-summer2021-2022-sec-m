@@ -1,0 +1,6 @@
+Sadia|123456789|sadia@gmail.com|2001-06-29|Bangladesh
+Rimi|987654321|rimi@gmail.com|2002-07-06|Egypt
+Tamanna|11111111|tamu@gmail.com|2001-10-12|Canada
+Leon|22222222|leon@gmail.com|2002-07-12|France
+Bhitto|33333333|bhitto@gmail.com|2000-05-03|America
+rakin|99999999|rakin@gmail.com|2022-07-06|Denmark
